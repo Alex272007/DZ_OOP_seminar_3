@@ -11,7 +11,7 @@ public class StudentGroupService {
     }
 
      public List<Student>getSortedStudentGroup(){
-        List<Student>studentsList = new ArrayList<>(sg.getStudentList());
+        List<Student>studentsList = new ArrayList<>(studentGroup.getStudentList());
         Collections.sort(studentsList);
         return studentsList;
     }
