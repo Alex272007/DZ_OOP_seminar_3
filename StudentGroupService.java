@@ -1,16 +1,17 @@
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public class StudentGroupService {
-    StudentGroup studentGroup;
+    private StudentGroup studentGroup;
 
     public StudentGroupService(StudentGroup studentGroup) {
         this.studentGroup = studentGroup;
     }
 
-    public List<Student> getStudentGroup(){
-        List<Student> studentsList = new ArrayList<>(studentGroup.getStudentList());
+     public List<Student>getSortedStudentGroup(){
+        List<Student>studentsList = new ArrayList<>(sg.getStudentList());
         Collections.sort(studentsList);
         return studentsList;
     }

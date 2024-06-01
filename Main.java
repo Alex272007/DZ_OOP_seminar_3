@@ -37,14 +37,14 @@ public class Main {
 
         // printListStudent(stream2);
 
-        // StudentGroupIterator iterator = new StudentGroupIterator(studentGroup.getStudentList());
+        //StudentGroupIterator iterator = new StudentGroupIterator(studentGroup.getStudentList());
         // printListStudent(studentGroup);
         
         // StudentGroupService service = new StudentGroupService(studentGroup);
         // printListStudent(service.getSortedStudentGroup());
 
-        System.out.println(student5.compareTo(student1));
-        
+        //System.out.println(student5.compareTo(student1));
+
     }
 
     static void printListStudent(Stream stream){
