@@ -33,12 +33,11 @@ public class Student {
                 + ", lastName= " + lastName + "}";
     }
 
-    @Override
-    public int compareTo(Student o) {
+    public int compareTo(Student student) {
         //if(studentId > o.getStudentId())
             //return 1;
         //if(studentId < o.getStudentId())
             //return -1;
-        return Integer.compare(studentID, o.studentID);
+        return Integer.compare(student.studentID, studentID);
     }
 }

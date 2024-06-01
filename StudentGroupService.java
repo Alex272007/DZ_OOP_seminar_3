@@ -3,17 +3,13 @@ import java.util.Collections;
 import java.util.List;
 
 public class StudentGroupService {
-    private StudentGroup studentGroup;
+    StudentGroup studentGroup;
 
     public StudentGroupService(StudentGroup studentGroup) {
         this.studentGroup = studentGroup;
     }
 
-    public StudentGroup getStudentGroup() {
-        return studentGroup;
-    }
-    
-    public List<Student>getSortedStudentGroup(){
+    public List<Student> getStudentGroup(){
         List<Student> studentsList = new ArrayList<>(studentGroup.getStudentList());
         Collections.sort(studentsList);
         return studentsList;

@@ -43,7 +43,8 @@ public class Main {
         // StudentGroupService service = new StudentGroupService(studentGroup);
         // printListStudent(service.getSortedStudentGroup());
 
-        System.out.println(student1.compareTo(student5));
+        System.out.println(student5.compareTo(student1));
+        
     }
 
     static void printListStudent(Stream stream){

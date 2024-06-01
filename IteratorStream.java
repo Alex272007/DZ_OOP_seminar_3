@@ -6,7 +6,7 @@ public class IteratorStream implements Iterator<StudentGroup>{
     private int index = 0;
 
     public IteratorStream(Stream stream){
-        this.list = list.getList();
+        this.list = stream.getList();
     }
 
     @Override
@@ -16,8 +16,9 @@ public class IteratorStream implements Iterator<StudentGroup>{
 
     @Override
     public StudentGroup next() {
-        if(hasNext())
+        if(hasNext()){
         return list.get(index++);
+        }
         return null;
     } 
 }

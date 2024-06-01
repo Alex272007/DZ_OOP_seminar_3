@@ -23,6 +23,11 @@ public class Stream implements Iterable<StudentGroup> {
         return new IteratorStream(this);
     }
 
+    public List<StudentGroup> getList() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getList'");
+    }
+
     
 }
     
